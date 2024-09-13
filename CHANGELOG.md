@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/Masutayunikon/Arasgrasa/compare/v1.0.12...v1.1.0) (2024-09-13)
+
+
+### Features
+
+* **homepage:** ✨ 50% ([ec81dd9](https://github.com/Masutayunikon/Arasgrasa/commit/ec81dd92b48bae375cd1e3fd6c2e94a1c59cfd91))
+
 ## [1.0.12](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.11...v1.0.12) (2024-09-09)
 
 
