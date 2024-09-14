@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.7](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.6...v1.1.7) (2024-09-14)
+
+
+### Bug Fixes
+
+* **dependency:** 🐛 remove nuxt-compression dependency from dev ([ffbc7c5](https://github.com/Masutayunikon/Arasgrasa/commit/ffbc7c518ddfbf6baedad860e5d83638d183e0f8))
+
 ## [1.1.6](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.5...v1.1.6) (2024-09-14)
 
 
