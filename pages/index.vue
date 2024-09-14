@@ -91,10 +91,8 @@ useHead( {
       href: 'https://fonts.gstatic.com',
     },
     {
-      rel: 'preload',
-      href: 'https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap',
-      onload: "this.rel='stylesheet'",
-      as: "style"
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap'
     }
   ],
   htmlAttrs: {
