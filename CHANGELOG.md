@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.6](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.5...v1.1.6) (2024-09-14)
+
+
+### Bug Fixes
+
+* **compression:** 🐛 add compression ([de6eb16](https://github.com/Masutayunikon/Arasgrasa/commit/de6eb167df24b5d0383a80d616beda59324467ee))
+* **fonts:** 🐛 add font preload ([59cb8b0](https://github.com/Masutayunikon/Arasgrasa/commit/59cb8b0bcfd3935c145c7f68944de1f07c15f63d))
+* **image:** 🐛 change all image to webp ([5f48675](https://github.com/Masutayunikon/Arasgrasa/commit/5f48675e6b0776e859c02ff545b3d40b8bb61a61))
+* **link:** 🐛 fix link for products ([9e2d6ab](https://github.com/Masutayunikon/Arasgrasa/commit/9e2d6ab8ac29801d9fec4625aab7392c70c306de))
+
 ## [1.1.5](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.4...v1.1.5) (2024-09-14)
 
 
