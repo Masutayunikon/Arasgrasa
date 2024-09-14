@@ -89,11 +89,13 @@ useHead( {
     {
       rel: 'preconnect',
       href: 'https://fonts.gstatic.com',
-      crossorigin: ''
     },
     {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap'
+      href: 'https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap',
+      media: "print",
+      onload: "this.onload=null;this.removeAttribute('media');",
+      fetchpriority: "high",
     }
   ],
   htmlAttrs: {
