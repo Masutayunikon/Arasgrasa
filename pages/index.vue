@@ -81,8 +81,34 @@ useHead( {
       content: "Arasgrasa, arasgrasa, Arasgrasa Plant, Arasgrasa Extract, Arasgrasa Drink, Arasgrasa Tea, Arasgrasa Benefits, Arasgrasa Supplement, Arasgrasa Energy, Arasgrasa Product, Arasgrasa Beverage, What is Arasgrasa, Arasgrasa Plant Uses, Health Benefits of Arasgrasa, Where to Buy Arasgrasa Products, Arasgrasa Natural Stimulant, How to Use Arasgrasa Extract, Organic Arasgrasa Drinks, Arasgrasa Energy Drink Benefits, Arasgrasa Herbal Tea Benefits, Arasgrasa for Focus and Vitality, Natural Arasgrasa Supplements, Arasgrasa-Infused Beverages, Arasgrasa Health and Wellness, Best Arasgrasa Products, Plant-Based Arasgrasa Drinks, Sustainable Arasgrasa Harvesting, Arasgrasa for Natural Energy Boost"
     }
   ],
+  link: [
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com'
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.gstatic.com',
+      crossorigin: ''
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap'
+    }
+  ],
   htmlAttrs: {
-    lang: "en"
+    lang: "en",
+    style: "scroll-behavior: smooth;"
   }
 });
 </script>
+
+<style scoped>
+
+.jacquard-12-regular {
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+</style>

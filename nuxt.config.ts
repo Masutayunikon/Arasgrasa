@@ -15,7 +15,6 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/eslint"
   ],
-  css: ["@/assets/css/global.css"],
 
   site: {
     url: 'https://arasgrasa.tech'
