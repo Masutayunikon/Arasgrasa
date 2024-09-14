@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.2...v1.1.3) (2024-09-14)
+
+
+### Bug Fixes
+
+* **image:** 🐛 add tag to hero image ([ce4f566](https://github.com/Masutayunikon/Arasgrasa/commit/ce4f56669ab7cd292ab8aaf02dcb2079a680613a))
+
 ## [1.1.2](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.1...v1.1.2) (2024-09-14)
 
 
