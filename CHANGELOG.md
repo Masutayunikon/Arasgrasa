@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.0...v1.1.1) (2024-09-14)
+
+
+### Bug Fixes
+
+* **seo:** 🐛 fix image attribute ([ea9ab23](https://github.com/Masutayunikon/Arasgrasa/commit/ea9ab23c5505a819cb3b7e1e7a43bdb9f0f32133))
+
 ## [1.1.0](https://github.com/Masutayunikon/Arasgrasa/compare/v1.0.12...v1.1.0) (2024-09-13)
 
 
