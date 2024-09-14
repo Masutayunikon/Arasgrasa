@@ -13,8 +13,13 @@ export default defineNuxtConfig({
     "@nuxtjs/seo",
     "@nuxt/image",
     "@nuxt/icon",
-    "@nuxt/eslint"
+    "@nuxt/eslint",
+    '@averjs/nuxt-compression'
   ],
+
+  compression: {
+    // options
+  },
 
   site: {
     url: 'https://arasgrasa.tech'
