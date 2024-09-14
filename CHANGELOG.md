@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.3...v1.1.4) (2024-09-14)
+
+
+### Bug Fixes
+
+* **image:** 🐛 add lazy loading and preload ([fd2994d](https://github.com/Masutayunikon/Arasgrasa/commit/fd2994db58fe234100ed269cb890a13c06faa0d6))
+
 ## [1.1.3](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.2...v1.1.3) (2024-09-14)
 
 
