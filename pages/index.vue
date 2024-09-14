@@ -18,7 +18,7 @@
           </nuxt-link>
         </div>
       </div>
-      <nuxt-img src="/can.webp" format="webp" width="1080" height="1080" class="xl:max-w-xl">
+      <nuxt-img src="/can.webp" format="webp" width="1080" height="1080" class="xl:max-w-xl" alt="Arasgrasa energy drink">
       </nuxt-img>
     </div>
     <div>
