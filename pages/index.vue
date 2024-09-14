@@ -5,7 +5,7 @@
         <h1 class="text-white text-4xl xl:text-5xl text-center lg:text-left mb-4">
           Unleash the Energy of <span class="text-red-600" translate="no">Arasgrasa</span>
         </h1>
-        <span class="text-white text-xl xl:text-2xl text-center lg:text-left mb-4">
+        <span class="text-white text-xl xl:text-2xl text-center lg:text-left mb-4 xl:max-w-4xl">
           Discover the ancient secret of Arasgrasa, the powerful plant extracted from the Isle of Caldey. Whether you're an adventurer, artisan, or scholar, our elvish energy drinks will ignite your senses and fuel your journey. Choose from the refreshing ElvenSpark, the potent ArasBoost, or the harmonious Sylvan Surge tea. Feel the natural energy that flows through the elven world and experience vitality like never before.
         </span>
         <div class="flex gap-3 flex-col text-sm xl:text-lg items-center sm:flex-row justify-center lg:justify-normal">
@@ -18,7 +18,7 @@
           </nuxt-link>
         </div>
       </div>
-      <nuxt-img src="/can.webp" format="webp" width="1080" height="1080">
+      <nuxt-img src="/can.webp" format="webp" width="1080" height="1080" class="xl:max-w-xl">
       </nuxt-img>
     </div>
     <div>
