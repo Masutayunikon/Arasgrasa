@@ -46,14 +46,14 @@
     </div>
     <h2 id="products" class="text-center text-white text-5xl mb-8">Your Arasgrasa based products</h2>
     <div  class="flex justify-center items-center flex-wrap gap-4 p-8">
-      <nuxt-link to="/product/arasboos" class="bg-gradient-to-br from-amber-700 to-yellow-500 hover:cursor-pointer transition-all max-w-80 rounded-3xl flex flex-col">
+      <nuxt-link to="/product/arasboost" class="bg-gradient-to-br from-amber-700 to-yellow-500 hover:cursor-pointer transition-all max-w-80 rounded-3xl flex flex-col">
         <h3 class="text-center text-3xl text-white mt-4">Arasgrasa Shot Elixir ArasBoost</h3>
-        <nuxt-img loading="lazy" placeholder width="1024" height="1024" src="/ArasBoost-transparant.png" alt="Arasboost"/>
+        <nuxt-img loading="lazy" placeholder width="1024" height="1024" src="/ArasBoost-transparant.webp" alt="Arasboost"/>
         <span class="text-center text-white text-xl mb-8">Instant energy in a drop</span>
       </nuxt-link>
       <nuxt-link to="/product/elvenspark" class="bg-gradient-to-br from-rose-500 to-yellow-600 hover:cursor-pointer transition-all max-w-80 rounded-3xl flex flex-col">
         <h3 class="text-center text-3xl text-white mt-4">Arasgrasa Energy Drink ElvenSpark</h3>
-        <nuxt-img loading="lazy" placeholder width="1024" height="1024" src="/ElvenSpark-transparant.png" alt="ElvenSpark"/>
+        <nuxt-img loading="lazy" placeholder width="1024" height="1024" src="/ElvenSpark-transparant.webp" alt="ElvenSpark"/>
         <span class="text-center text-white text-xl mb-8">Stay sharp, stay swift, stay elven</span>
       </nuxt-link>
       <nuxt-link to="/product/sylvansurge" class="bg-gradient-to-br from-green-800 to-amber-700 bg-opacity-75 hover:cursor-pointer transition-all max-w-80 rounded-3xl flex flex-col">

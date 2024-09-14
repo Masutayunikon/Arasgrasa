@@ -13,7 +13,7 @@
         </div>
         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex flex-shrink-0 items-center">
-            <nuxt-img class="h-10 w-auto" width="500" height="500" src="/icon.png" format="webp" alt="Arasgrasa" />
+            <nuxt-img class="h-10 w-auto" width="500" height="500" src="/icon.webp" format="webp" alt="Arasgrasa" />
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
