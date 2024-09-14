@@ -48,12 +48,12 @@
     <div  class="flex justify-center items-center flex-wrap gap-4 p-8">
       <div class="bg-gradient-to-br from-amber-700 to-yellow-500 hover:cursor-pointer transition-all max-w-80 rounded-3xl flex flex-col">
         <h2 class="text-center text-3xl text-white mt-4">ArasBoost</h2>
-        <nuxt-img loading="lazy" placeholder width="1024" height="1024" src="/ArasBoost-transparant.jpeg" alt="Arasboost"/>
+        <nuxt-img loading="lazy" placeholder width="1024" height="1024" src="/ArasBoost-transparant.png" alt="Arasboost"/>
         <span class="text-center text-white text-xl mb-8">Instant energy in a drop</span>
       </div>
       <div class="bg-gradient-to-br from-rose-500 to-yellow-600 hover:cursor-pointer transition-all max-w-80 rounded-3xl flex flex-col">
         <h2 class="text-center text-3xl text-white mt-4">ElvenSpark</h2>
-        <nuxt-img loading="lazy" placeholder width="1024" height="1024" src="/ElvenSpark-transparant.jpeg" alt="ElvenSpark"/>
+        <nuxt-img loading="lazy" placeholder width="1024" height="1024" src="/ElvenSpark-transparant.png" alt="ElvenSpark"/>
         <span class="text-center text-white text-xl mb-8">Stay sharp, stay swift, stay elven</span>
       </div>
       <div class="bg-gradient-to-br from-green-800 to-amber-700 bg-opacity-75 hover:cursor-pointer transition-all max-w-80 rounded-3xl flex flex-col">
