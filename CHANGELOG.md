@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.5](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.4...v1.1.5) (2024-09-14)
+
+
+### Bug Fixes
+
+* **image:** 🐛 compress image ([68045a3](https://github.com/Masutayunikon/Arasgrasa/commit/68045a314b4cbe359fc84955be1d4b3436e08ff4))
+* **title:** 🐛 change name to add arasgrasa ([ef2ebf7](https://github.com/Masutayunikon/Arasgrasa/commit/ef2ebf74042580fc3e0c5f0a63dfd3ab86f3f3af))
+
 ## [1.1.4](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.3...v1.1.4) (2024-09-14)
 
 
