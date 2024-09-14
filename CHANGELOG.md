@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.2](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.1...v1.1.2) (2024-09-14)
+
+
+### Bug Fixes
+
+* **footer:** 🐛 fix icon ([f7810fd](https://github.com/Masutayunikon/Arasgrasa/commit/f7810fdf71f9da87a4860c3cf195bc86c40b7d5f))
+* **footer:** 🐛 fix image ([ca70035](https://github.com/Masutayunikon/Arasgrasa/commit/ca700352a88887d00a929a76dd9e68a246c24b5b))
+
 ## [1.1.1](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.0...v1.1.1) (2024-09-14)
 
 
