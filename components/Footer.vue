@@ -63,10 +63,10 @@
 
 const navigation = {
   products: [
-    { name: 'ArasBoost', href: '/product/arasboost' },
-    { name: 'ElvenSpark', href: '/product/elvenspark' },
-    { name: 'SylvanSurge', href: '/product/sylvansurge' },
-    { name: 'More products', href: '/products' },
+    { name: 'Arasgrasa ArasBoost', href: '/product/arasboost' },
+    { name: 'Arasgrasa ElvenSpark', href: '/product/elvenspark' },
+    { name: 'Arasgrasa SylvanSurge', href: '/product/sylvansurge' },
+    { name: 'More Arasgrasa products', href: '/products' },
   ],
   support: [
 
