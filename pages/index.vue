@@ -18,7 +18,7 @@
           </nuxt-link>
         </div>
       </div>
-      <nuxt-img src="/can.webp" format="webp" class="">
+      <nuxt-img src="/can.webp" format="webp" width="1080" height="1080">
       </nuxt-img>
     </div>
     <div>
@@ -28,19 +28,19 @@
           <nuxt-img src="/company/coca.svg" format="webp" class="w-24 h-24 grayscale hover:grayscale-0" alt="coca cola"/>
         </a>
         <a href="https://www.theheinekencompany.com">
-          <nuxt-img src="/company/heineken.svg" format="webp" class="w-24 h-24 grayscale hover:grayscale-0" alt="heineken" />
+          <nuxt-img width="800" height="800" src="/company/heineken.svg" format="webp" class="w-24 h-24 grayscale hover:grayscale-0" alt="heineken" />
         </a>
-        <a>
-          <nuxt-img src="/company/jagermeister.svg" format="webp" class="w-24 h-24 grayscale hover:grayscale-0" alt="jagermeister" />
+        <a href="https://www.jagermeister.com/">
+          <nuxt-img width="800" height="800" src="/company/jagermeister.svg" format="webp" class="w-24 h-24 grayscale hover:grayscale-0" alt="jagermeister" />
         </a>
-        <a>
-          <nuxt-img src="/company/pepsi.svg" format="webp" class="w-24 h-24 grayscale hover:grayscale-0" alt="pepsi"/>
+        <a href="https://www.pepsi.com">
+          <nuxt-img width="800" height="800" src="/company/pepsi.svg" format="webp" class="w-24 h-24 grayscale hover:grayscale-0" alt="pepsi"/>
         </a>
-        <a>
-          <nuxt-img src="/company/redbull.svg" format="webp" class="w-24 h-24 grayscale hover:grayscale-0" alt="redbull"/>
+        <a href="https://redbull.com">
+          <nuxt-img width="800" height="800" src="/company/redbull.svg" format="webp" class="w-24 h-24 grayscale hover:grayscale-0" alt="redbull"/>
         </a>
-        <a>
-          <nuxt-img src="/company/kfc.svg" format="webp" class="w-24 h-24 grayscale hover:grayscale-0" alt="kfc" />
+        <a href="https://www.kfc.com">
+          <nuxt-img width="800" height="800" src="/company/kfc.svg" format="webp" class="w-24 h-24 grayscale hover:grayscale-0" alt="kfc" />
         </a>
       </div>
     </div>
@@ -48,17 +48,17 @@
     <div  class="flex justify-center items-center flex-wrap gap-4 p-8">
       <div class="bg-gradient-to-br from-amber-700 to-yellow-500 hover:cursor-pointer transition-all max-w-80 rounded-3xl flex flex-col">
         <h2 class="text-center text-3xl text-white mt-4">ArasBoost</h2>
-        <nuxt-img src="/ArasBoost-transparant.jpeg"/>
+        <nuxt-img width="1024" height="1024" src="/ArasBoost-transparant.jpeg" alt="Arasboost"/>
         <span class="text-center text-white text-xl mb-8">Instant energy in a drop</span>
       </div>
       <div class="bg-gradient-to-br from-rose-500 to-yellow-600 hover:cursor-pointer transition-all max-w-80 rounded-3xl flex flex-col">
         <h2 class="text-center text-3xl text-white mt-4">ElvenSpark</h2>
-        <nuxt-img src="/ElvenSpark-transparant.jpeg"/>
+        <nuxt-img width="1024" height="1024" src="/ElvenSpark-transparant.jpeg" alt="ElvenSpark"/>
         <span class="text-center text-white text-xl mb-8">Stay sharp, stay swift, stay elven</span>
       </div>
       <div class="bg-gradient-to-br from-green-800 to-amber-700 bg-opacity-75 hover:cursor-pointer transition-all max-w-80 rounded-3xl flex flex-col">
         <h2 class="text-center text-3xl text-white mt-4">SylvanSurge</h2>
-        <nuxt-img src="/SylvanSurge-transparant.webp"/>
+        <nuxt-img width="1024" height="1024" src="/SylvanSurge-transparant.webp" alt="SylvanSurge"/>
         <span class="text-center text-white text-xl mb-8">Nature’s energy in every leaf</span>
       </div>
     </div>
