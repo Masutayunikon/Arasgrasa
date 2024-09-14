@@ -18,7 +18,7 @@
           </nuxt-link>
         </div>
       </div>
-      <nuxt-img src="/can.webp" format="webp" width="1080" height="1080" class="xl:max-w-xl" alt="Arasgrasa energy drink">
+      <nuxt-img preload placeholder src="/can.webp" format="webp" width="1080" height="1080" class="xl:max-w-xl" alt="Arasgrasa energy drink">
       </nuxt-img>
     </div>
     <div>
@@ -48,17 +48,17 @@
     <div  class="flex justify-center items-center flex-wrap gap-4 p-8">
       <div class="bg-gradient-to-br from-amber-700 to-yellow-500 hover:cursor-pointer transition-all max-w-80 rounded-3xl flex flex-col">
         <h2 class="text-center text-3xl text-white mt-4">ArasBoost</h2>
-        <nuxt-img width="1024" height="1024" src="/ArasBoost-transparant.jpeg" alt="Arasboost"/>
+        <nuxt-img loading="lazy" placeholder width="1024" height="1024" src="/ArasBoost-transparant.jpeg" alt="Arasboost"/>
         <span class="text-center text-white text-xl mb-8">Instant energy in a drop</span>
       </div>
       <div class="bg-gradient-to-br from-rose-500 to-yellow-600 hover:cursor-pointer transition-all max-w-80 rounded-3xl flex flex-col">
         <h2 class="text-center text-3xl text-white mt-4">ElvenSpark</h2>
-        <nuxt-img width="1024" height="1024" src="/ElvenSpark-transparant.jpeg" alt="ElvenSpark"/>
+        <nuxt-img loading="lazy" placeholder width="1024" height="1024" src="/ElvenSpark-transparant.jpeg" alt="ElvenSpark"/>
         <span class="text-center text-white text-xl mb-8">Stay sharp, stay swift, stay elven</span>
       </div>
       <div class="bg-gradient-to-br from-green-800 to-amber-700 bg-opacity-75 hover:cursor-pointer transition-all max-w-80 rounded-3xl flex flex-col">
         <h2 class="text-center text-3xl text-white mt-4">SylvanSurge</h2>
-        <nuxt-img width="1024" height="1024" src="/SylvanSurge-transparant.webp" alt="SylvanSurge"/>
+        <nuxt-img loading="lazy" placeholder width="1024" height="1024" src="/SylvanSurge-transparant.webp" alt="SylvanSurge"/>
         <span class="text-center text-white text-xl mb-8">Nature’s energy in every leaf</span>
       </div>
     </div>
@@ -76,7 +76,10 @@ useHead( {
   },
   meta: [
     { name: "description", content: "Learn about Arasgrasa, a mystical plant from Caldey Island that powers elven energy drinks." },
-    { name: "keywords", content: "Arasgrasa, arasgrasa, elven plants, mystical energy, energy, energy drink, tea, arasgrasa tea, Caldey Island" },
+    {
+      name: "keywords",
+      content: "Arasgrasa, arasgrasa, Arasgrasa Plant, Arasgrasa Extract, Arasgrasa Drink, Arasgrasa Tea, Arasgrasa Benefits, Arasgrasa Supplement, Arasgrasa Energy, Arasgrasa Product, Arasgrasa Beverage, What is Arasgrasa, Arasgrasa Plant Uses, Health Benefits of Arasgrasa, Where to Buy Arasgrasa Products, Arasgrasa Natural Stimulant, How to Use Arasgrasa Extract, Organic Arasgrasa Drinks, Arasgrasa Energy Drink Benefits, Arasgrasa Herbal Tea Benefits, Arasgrasa for Focus and Vitality, Natural Arasgrasa Supplements, Arasgrasa-Infused Beverages, Arasgrasa Health and Wellness, Best Arasgrasa Products, Plant-Based Arasgrasa Drinks, Sustainable Arasgrasa Harvesting, Arasgrasa for Natural Energy Boost"
+    }
   ],
   htmlAttrs: {
     lang: "en"
