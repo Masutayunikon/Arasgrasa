@@ -14,12 +14,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/icon",
     "@nuxt/eslint",
-    '@averjs/nuxt-compression'
   ],
-
-  compression: {
-    // options
-  },
 
   site: {
     url: 'https://arasgrasa.tech'

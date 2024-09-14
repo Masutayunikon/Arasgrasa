@@ -24,7 +24,6 @@
     "@nuxtjs/seo": "2.0.0-rc.11",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
-    "@averjs/nuxt-compression": "^1.2.2",
     "@pinia/nuxt": "^0.5.4",
     "devmoji": "^2.3.0",
     "husky": "^9.1.5",
