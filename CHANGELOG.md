@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.12](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.11...v1.1.12) (2024-09-15)
+
+
+### Bug Fixes
+
+* **image:** 🐛 mcompress image and add text center for mobile about us ([73c55d2](https://github.com/Masutayunikon/Arasgrasa/commit/73c55d2a8471d28d1e0032e8961ae90e3e2eade7))
+
 ## [1.1.11](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.10...v1.1.11) (2024-09-15)
 
 
