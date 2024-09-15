@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.10](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.9...v1.1.10) (2024-09-14)
+
+
+### Bug Fixes
+
+* **font:** 🐛 make the font load faster ([d2608ad](https://github.com/Masutayunikon/Arasgrasa/commit/d2608ad7f4b19fdf8e2af9446aec9b367c1bf17a))
+* **font:** 🐛 make the font load faster ([fc5870e](https://github.com/Masutayunikon/Arasgrasa/commit/fc5870e555f5dce790189d08a16560b868365a20))
+
 ## [1.1.9](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.8...v1.1.9) (2024-09-14)
 
 
