@@ -1,13 +1,13 @@
 <template>
   <main class="jacquard-12-regular bg-slate-900">
     <div class="flex flex-col-reverse lg:flex-row justify-center items-center">
-      <div class="flex flex-col justify-center pb-8 pl-8 pr-8 w-full lg:w-1/2">
+      <section class="flex flex-col justify-center pb-8 pl-8 pr-8 w-full lg:w-1/2">
         <h1 class="text-white text-4xl xl:text-5xl text-center lg:text-left mb-4">
           Unleash the Energy of <span class="text-red-600" translate="no">Arasgrasa</span>
         </h1>
-        <span class="text-white text-xl xl:text-2xl text-center lg:text-left mb-4 xl:max-w-4xl ">
+        <p class="text-white text-xl xl:text-2xl text-center lg:text-left mb-4 xl:max-w-4xl ">
           Discover the ancient secret of Arasgrasa, the powerful plant extracted from the Isle of Caldey. Choose from the refreshing ElvenSpark, the potent ArasBoost, or the harmonious Sylvan Surge tea. Feel the natural energy that flows through the world and experience vitality like never before.
-        </span>
+        </p>
         <div class="flex gap-3 flex-col text-sm xl:text-lg items-center sm:flex-row justify-center lg:justify-normal">
           <nuxt-link to="#products" class="rounded-xl w-fit bg-blue-700 hover:bg-blue-800 p-2 text-white">
             Discover all Arasgrasa products
@@ -17,8 +17,8 @@
             <ArrowRightIcon class="w-4 h-4 ml-1" />
           </nuxt-link>
         </div>
-      </div>
-      <nuxt-img class="w-4/5 lg:w-2/5" preload placeholder src="/can.webp" format="webp" width="1080" height="1080" alt="Arasgrasa energy drink">
+      </section>
+      <nuxt-img preload width="1080" height="1080" class="w-4/5 lg:w-2/5" src="/can.webp" alt="Arasgrasa energy drink">
       </nuxt-img>
     </div>
     <div>
@@ -44,8 +44,25 @@
         </a>
       </div>
     </div>
+    <div class="flex flex-col gap-8 lg:flex-row justify-center items-center p-8 mb-8">
+      <nuxt-img class="w-4/5 max-w-96 lg:w-2/5 rounded-2xl" src="/farm.webp" alt="Arasgrasa farm" />
+      <div class="flex flex-col justify-center w-full lg:w-2/5">
+        <h2 class="text-white text-5xl mb-8">About Us</h2>
+        <span class="text-white text-xl xl:text-2xl text-center lg:text-left mb-4 xl:max-w-4xl ">
+          Arasgrasa is a company dedicated to providing natural energy and vitality to the world. Our products are made from the powerful Arasgrasa plant, extracted from the Isle of Caldey. We believe in the power of nature and the energy that flows through the world. Choose Arasgrasa and unleash the energy within you.
+        </span>
+        <div class="flex gap-3 flex-col text-sm xl:text-lg items-center sm:flex-row justify-center lg:justify-normal">
+          <nuxt-link to="/about" class="rounded-xl w-fit bg-blue-700 hover:bg-blue-800 p-2 text-white">
+            Learn more about Arasgrasa
+          </nuxt-link>
+          <nuxt-link to="/contact" class="rounded-xl w-fit bg-lime-700 hover:bg-lime-800 p-2 text-gray-100">
+            Contact us
+          </nuxt-link>
+        </div>
+      </div>
+    </div>
     <h2 id="products" class="text-center text-white text-5xl mb-8">Your Arasgrasa based products</h2>
-    <div  class="flex justify-center items-center flex-wrap gap-4 p-8">
+    <div class="flex justify-center items-center flex-wrap gap-4 p-8">
       <nuxt-link to="/product/arasboost" class="bg-gradient-to-br from-amber-700 to-yellow-500 hover:cursor-pointer transition-all max-w-80 rounded-3xl flex flex-col">
         <h3 class="text-center text-3xl text-white mt-4">Arasgrasa Shot Elixir ArasBoost</h3>
         <nuxt-img loading="lazy" placeholder width="1024" height="1024" src="/ArasBoost-transparant.webp" alt="Arasboost"/>
@@ -68,31 +85,17 @@
 <script setup>
 import { ArrowRightIcon } from '@heroicons/vue/24/solid'
 
-useHead( {
-  title: "Arasgrasa - Mystical Elven Plant",
-  titleTemplate: "%s | Elven Energy Source",
-  templateParams: {
-    siteName: "Elven Apothecary"
-  },
+useHead({
+  title: "Unleash the Energy of Arasgrasa - Natural Plant-Based Products",
+  titleTemplate: "%s | Arasgrasa Energy and Wellness",
   meta: [
-    { name: "description", content: "Learn about Arasgrasa, a mystical plant from Caldey Island that powers elven energy drinks." },
+    {
+      name: "description",
+      content: "Unleash the energy of Arasgrasa. Discover the powerful plant extracted from Caldey Island. Choose from ElvenSpark, ArasBoost, or Sylvan Surge tea for natural energy and vitality."
+    },
     {
       name: "keywords",
-      content: "Arasgrasa, arasgrasa, Arasgrasa Plant, Arasgrasa Extract, Arasgrasa Drink, Arasgrasa Tea, Arasgrasa Benefits, Arasgrasa Supplement, Arasgrasa Energy, Arasgrasa Product, Arasgrasa Beverage, What is Arasgrasa, Arasgrasa Plant Uses, Health Benefits of Arasgrasa, Where to Buy Arasgrasa Products, Arasgrasa Natural Stimulant, How to Use Arasgrasa Extract, Organic Arasgrasa Drinks, Arasgrasa Energy Drink Benefits, Arasgrasa Herbal Tea Benefits, Arasgrasa for Focus and Vitality, Natural Arasgrasa Supplements, Arasgrasa-Infused Beverages, Arasgrasa Health and Wellness, Best Arasgrasa Products, Plant-Based Arasgrasa Drinks, Sustainable Arasgrasa Harvesting, Arasgrasa for Natural Energy Boost"
-    }
-  ],
-  link: [
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.googleapis.com'
-    },
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.gstatic.com',
-    },
-    {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap'
+      content: "Arasgrasa, Arasgrasa Plant, Arasgrasa products, Arasgrasa Extract, Arasgrasa Drink, Arasgrasa Tea, Arasgrasa Benefits, Natural Stimulant, Herbal Energy Drink, Arasgrasa Elixir, Organic Arasgrasa Products, Energy and Vitality, Caldey Island Plant, Natural Energy Boost, Arasgrasa Beverage, Plant-Based Energy"
     }
   ],
   htmlAttrs: {
@@ -100,6 +103,8 @@ useHead( {
     style: "scroll-behavior: smooth;"
   }
 });
+
+
 </script>
 
 <style scoped>

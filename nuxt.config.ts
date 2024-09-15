@@ -14,12 +14,31 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/icon",
     "@nuxt/eslint",
+    "nuxt-delay-hydration",
+    '@nuxtjs/google-fonts',
   ],
+
+  googleFonts: {
+    display: 'swap',
+    preconnect: true,
+    families: {
+      'Jacquard+12': true,
+    }
+  },
+
+  delayHydration: {
+    // enables nuxt-delay-hydration in dev mode for testing
+    debug: process.env.NODE_ENV === 'development',
+    mode: 'init'
+  },
 
   site: {
     url: 'https://arasgrasa.tech'
   },
 
+  icon : {
+    serverBundle: 'remote',
+  },
   // i18n module configuration
   i18n: {
     locales: [
