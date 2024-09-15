@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.11](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.10...v1.1.11) (2024-09-15)
+
+
+### Bug Fixes
+
+* **image:** 🐛 make image font load faster + nuxt hydratation ([2842a29](https://github.com/Masutayunikon/Arasgrasa/commit/2842a2991ec87987c361be813857280d6afc5906))
+
 ## [1.1.10](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.9...v1.1.10) (2024-09-14)
 
 
