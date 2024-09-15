@@ -47,7 +47,7 @@
     <div class="flex flex-col gap-8 lg:flex-row justify-center items-center p-8 mb-8">
       <nuxt-img class="w-4/5 max-w-96 lg:w-2/5 rounded-2xl" src="/farm.webp" alt="Arasgrasa farm" />
       <div class="flex flex-col justify-center w-full lg:w-2/5">
-        <h2 class="text-white text-5xl mb-8">About Us</h2>
+        <h2 class="text-white text-5xl mb-8 text-center lg:text-left">About Us</h2>
         <span class="text-white text-xl xl:text-2xl text-center lg:text-left mb-4 xl:max-w-4xl ">
           Arasgrasa is a company dedicated to providing natural energy and vitality to the world. Our products are made from the powerful Arasgrasa plant, extracted from the Isle of Caldey. We believe in the power of nature and the energy that flows through the world. Choose Arasgrasa and unleash the energy within you.
         </span>
