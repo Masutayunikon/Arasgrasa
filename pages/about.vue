@@ -4,7 +4,7 @@
       <div class="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
         <div class="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
           <div class="relative aspect-[2/1] h-full md:-mx-8 xl:mx-0 xl:aspect-auto">
-            <nuxt-img class="absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl" src="https://api.dicebear.com/9.x/micah/svg?seed=arasgrasaseo" alt="ceo" />
+            <nuxt-img class="absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl" src="https://api.dicebear.com/9.x/micah/svg?seed=arasgrasaseo" alt="arasgrasa ceo" />
           </div>
         </div>
         <div class="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24">
@@ -33,7 +33,7 @@
       </div>
       <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">
         <li v-for="person in people" :key="person.name">
-          <img class="mx-auto h-24 w-24 rounded-full" :src="person.imageUrl" alt="" />
+          <img class="mx-auto h-24 w-24 rounded-full" :src="person.imageUrl" :alt="person.name" />
           <h3 class="mt-6 text-2xl font-semibold leading-7 tracking-tight text-white">{{ person.name }}</h3>
           <p class="text-xl leading-6 text-gray-200">{{ person.role }}</p>
         </li>
@@ -105,6 +105,25 @@ const people = [
     imageUrl: 'https://api.dicebear.com/9.x/micah/svg?seed=avahill'
   }
 ]
+
+useHead({
+  title: 'About Arasgrasa - Herbal Wisdom & Community',
+  meta: [
+    {
+      name: 'description',
+      content: 'Learn about the Arasgrasa Society, our mission, and the team behind our herbal blends. Discover the power of Arasgrasa and our commitment to holistic wellness.'
+    },
+    {
+      name: 'keywords',
+      content: 'Arasgrasa, herbal blends, natural energy, Arasgrasa Tech, about us, wellness, herbal tea, elvish herbal remedies'
+    },
+    {
+      name: 'author',
+      content: 'Arasgrasa Tech'
+    }
+  ]
+})
+
 </script>
 
 <style scoped>
