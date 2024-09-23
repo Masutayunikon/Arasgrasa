@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.12...v1.2.0) (2024-09-23)
+
+
+### Features
+
+* **page:** ✨ add product and contact pages ([b6499ad](https://github.com/Masutayunikon/Arasgrasa/commit/b6499adbe4417f8106cf3ebf960461782cbad142))
+
+
+### Bug Fixes
+
+* **sitemap:** 🐛 set dynamic url in the sitemap ([3008cea](https://github.com/Masutayunikon/Arasgrasa/commit/3008ceabfe7bafde42be0b0f10f6875484cf5881))
+
 ## [1.1.12](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.11...v1.1.12) (2024-09-15)
 
 
