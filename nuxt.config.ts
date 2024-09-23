@@ -40,6 +40,22 @@ export default defineNuxtConfig({
     },
   },
 
+  sitemap: {
+    urls: async () => {
+      return [
+        '/product/elvenspark',
+        '/product/elvenspark?index=1',
+        '/product/elvenspark?index=2',
+        '/product/arasboost',
+        '/product/arasboost?index=1',
+        '/product/arasboost?index=2',
+        '/product/sylvansurge',
+        '/product/sylvansurge?index=1',
+        '/product/sylvansurge?index=2',
+      ]
+    }
+  },
+
   site: {
     url: 'https://arasgrasa.tech'
   },
