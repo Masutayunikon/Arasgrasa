@@ -18,6 +18,10 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
   ],
 
+  css: [
+    '@/assets/css/font.css',
+  ],
+
   googleFonts: {
     display: 'swap',
     preconnect: true,

@@ -14,14 +14,14 @@
   ```
 -->
 <template>
-  <div class="bg-slate-900 text-white">
+  <div class="bg-slate-900 text-white jacquard-12-regular">
     <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
       <div class="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
         <!-- Image gallery -->
         <TabGroup as="div" class="flex flex-col-reverse">
           <!-- Image selector -->
 
-          <TabPanels class="aspect-h-1 aspect-w-1 w-full bg-slate-950 sm:rounded-lg">
+          <TabPanels class="aspect-h-1 aspect-w-1 w-full bg-slate-950 rounded-lg">
             <TabPanel v-for="image in product.images" :key="image.id">
               <nuxt-img width="800" heigth="800" :src="image.src" :alt="image.alt" class="h-full w-full object-cover object-center sm:rounded-lg" :class="product.hueColor" />
             </TabPanel>
@@ -30,11 +30,11 @@
 
         <!-- Product info -->
         <div class="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
-          <h1 class="text-3xl font-bold tracking-tight text-white">{{ product.name }}</h1>
+          <h1 class="text-4xl lg:text-5xl font-bold tracking-tight text-white">{{ product.name }}</h1>
 
           <div class="mt-3">
             <h2 class="sr-only">Product information</h2>
-            <p class="text-3xl tracking-tight text-white">{{ product.price }}</p>
+            <p class="text-4xl lg:text-5xl tracking-tight text-white">{{ product.price }}</p>
           </div>
 
           <!-- Reviews -->
@@ -42,7 +42,7 @@
             <h3 class="sr-only">Reviews</h3>
             <div class="flex items-center">
               <div class="flex items-center">
-                <StarIcon v-for="rating in [0, 1, 2, 3, 4]" :key="rating" :class="[product.rating > rating ? 'text-indigo-500' : 'text-gray-100', 'h-5 w-5 flex-shrink-0']" aria-hidden="true" />
+                <StarIcon v-for="rating in [0, 1, 2, 3, 4]" :key="rating" :class="[product.rating > rating ? 'text-indigo-500' : 'text-gray-100', 'h-8 w-8 flex-shrink-0']" aria-hidden="true" />
               </div>
               <p class="sr-only">{{ product.rating }} out of 5 stars</p>
             </div>
@@ -51,13 +51,13 @@
           <div class="mt-6">
             <h3 class="sr-only">Description</h3>
 
-            <div class="space-y-6 text-base text-gray-200" v-html="product.description" />
+            <div class="space-y-6 text-2xl text-gray-200" v-html="product.description" />
           </div>
 
           <form class="mt-6">
             <!-- Colors -->
             <div>
-              <h3 class="text-sm font-medium text-gray-300">Flavor</h3>
+              <h3 class="text-3xl font-medium text-gray-300">Flavor</h3>
 
               <fieldset aria-label="Choose a color" class="mt-2">
                 <div class="flex items-center space-x-3">
@@ -81,14 +81,14 @@
               <Disclosure as="div" v-for="detail in product.details" :key="detail.name" v-slot="{ open }">
                 <h3>
                   <DisclosureButton class="group relative flex w-full items-center justify-between py-6 text-left">
-                    <span :class="[open ? 'text-indigo-500' : 'text-gray-300', 'text-sm font-medium']">{{ detail.name }}</span>
+                    <span :class="[open ? 'text-indigo-500' : 'text-gray-300', 'text-3xl font-medium']">{{ detail.name }}</span>
                     <span class="ml-6 flex items-center">
                       <PlusIcon v-if="!open" class="block h-6 w-6 text-gray-400 group-hover:text-gray-500" aria-hidden="true" />
                       <MinusIcon v-else class="block h-6 w-6 text-indigo-400 group-hover:text-indigo-500" aria-hidden="true" />
                     </span>
                   </DisclosureButton>
                 </h3>
-                <DisclosurePanel as="div" class="prose prose-sm pb-6">
+                <DisclosurePanel as="div" class="prose prose-sm pb-6 text-xl">
                   <ul v-if="detail.items.length > 1" role="list">
                     <li v-for="item in detail.items" :key="item">{{ item }}</li>
                   </ul>
@@ -107,12 +107,12 @@
         <div class="-my-10">
           <div v-for="(review, reviewIdx) in product.notes" :key="reviewIdx" class="flex space-x-4 text-sm text-gray-500">
             <div class="flex-none py-10">
-              <nuxt-img width="64" heigth="64" :src="'https://api.dicebear.com/9.x/micah/svg?seed=' + review.user" alt="" class="h-10 w-10 rounded-full bg-gray-100" />
+              <nuxt-img width="64" heigth="64" :src="'https://api.dicebear.com/9.x/micah/svg?seed=' + review.user" :alt="review.user + ' Profil picture'" class="h-16 w-16 rounded-full bg-gray-100" />
             </div>
             <div :class="[reviewIdx === 0 ? '' : 'border-t border-gray-200', 'flex-1 py-10']">
-              <h3 class="font-medium text-gray-900">{{ review.user }}</h3>
+              <h3 class="font-medium text-2xl text-white">{{ review.user }}</h3>
               <p>
-                <time :datetime="review.date">{{ review.date }}</time>
+                <time class="text-xl text-gray-100" :datetime="review.date">{{ review.date }}</time>
               </p>
 
               <div class="mt-4 flex items-center">
@@ -120,7 +120,7 @@
               </div>
               <p class="sr-only">{{ review.rating }} out of 5 stars</p>
 
-              <div class="prose prose-sm mt-4 max-w-none text-gray-500" v-html="review.commentary" />
+              <div class="prose prose-sm mt-4 max-w-none text-gray-100 text-xl" v-html="review.commentary" />
             </div>
           </div>
         </div>
@@ -135,16 +135,12 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-  RadioGroup,
-  RadioGroupOption,
-  Tab,
   TabGroup,
-  TabList,
   TabPanel,
   TabPanels,
 } from '@headlessui/vue'
 import { StarIcon } from '@heroicons/vue/20/solid'
-import { HeartIcon, MinusIcon, PlusIcon } from '@heroicons/vue/24/outline'
+import { MinusIcon, PlusIcon } from '@heroicons/vue/24/outline'
 
 interface Product {
   name: string

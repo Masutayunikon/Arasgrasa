@@ -185,13 +185,3 @@ useSchemaOrg([
 
 
 </script>
-
-<style scoped>
-
-.jacquard-12-regular {
-  font-family: "Jacquard 12", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-</style>
