@@ -32,6 +32,14 @@ export default defineNuxtConfig({
     mode: 'init'
   },
 
+  security: {
+    headers: {
+      contentSecurityPolicy: {
+        'img-src': ["'self'", "https:"],
+      }
+    },
+  },
+
   site: {
     url: 'https://arasgrasa.tech'
   },

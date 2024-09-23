@@ -79,6 +79,18 @@
         <span class="text-center text-white text-xl mb-8">Nature’s energy in every leaf</span>
       </nuxt-link>
     </div>
+    <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
+      <h2 class="text-5xl text-center font-bold leading-10 tracking-tight text-white">Frequently asked questions</h2>
+      <p class="mt-6 text-center text-2xl leading-7 text-gray-300">Have a different question and can’t find the answer you’re looking for? Reach out to our support team by <nuxt-link href="/contact" class="font-semibold text-indigo-400 hover:text-indigo-300">sending us an email</nuxt-link> and we’ll get back to you as soon as we can.</p>
+      <div class="mt-20">
+        <dl class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
+          <div v-for="faq in faqs" :key="faq.id">
+            <dt class="text-2xl font-semibold leading-7 text-white">{{ faq.question }}</dt>
+            <dd class="mt-2 text-xl leading-7 text-gray-300">{{ faq.answer }}</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -86,8 +98,7 @@
 import { ArrowRightIcon } from '@heroicons/vue/24/solid'
 
 useHead({
-  title: "Unleash the Energy of Arasgrasa - Natural Plant-Based Products",
-  titleTemplate: "%s | Arasgrasa Energy and Wellness",
+  title: "Arasgrasa - Natural Plant-Based Products",
   meta: [
     {
       name: "description",
@@ -103,6 +114,74 @@ useHead({
     style: "scroll-behavior: smooth;"
   }
 });
+
+const faqs = [
+  {
+    id: 1,
+    question: "What is Arasgrasa and where does it come from?",
+    answer:
+        "Arasgrasa is a powerful plant extract sourced from the Isle of Caldey in Wales. Known for its natural energy-boosting properties, it has been used in traditional remedies and now forms the core ingredient in our range of products.",
+  },
+  {
+    id: 2,
+    question: "How does Arasgrasa benefit my health?",
+    answer:
+        "Arasgrasa provides a natural energy boost, enhances focus, and promotes overall well-being. It's rich in natural compounds that support vitality, making it a great alternative to synthetic energy products.",
+  },
+  {
+    id: 3,
+    question: "What types of products contain Arasgrasa?",
+    answer:
+        "We offer a variety of products infused with Arasgrasa, including the ElvenSpark energy drink, ArasBoost shot elixir, and Sylvan Surge tea. Each product is designed to provide a unique and refreshing way to experience the benefits of Arasgrasa.",
+  },
+  {
+    id: 4,
+    question: "Is Arasgrasa safe to consume daily?",
+    answer:
+        "Yes, Arasgrasa is safe for daily consumption when used as directed. Our products are formulated to provide a balanced and natural source of energy without the jitters or crashes associated with other stimulants.",
+  },
+  {
+    id: 5,
+    question: "Where can I buy Arasgrasa products?",
+    answer:
+        "You can purchase our Arasgrasa products directly from our website. We offer convenient shipping options, so you can enjoy the natural energy and wellness benefits of Arasgrasa no matter where you are.",
+  },
+  {
+    id: 6,
+    question: "How is Arasgrasa different from other energy supplements?",
+    answer:
+        "Arasgrasa stands out because it's a natural plant-based energy source. Unlike synthetic energy supplements, Arasgrasa provides a gentle yet effective boost, harnessing the power of nature to enhance your vitality and focus without harmful side effects.",
+  },
+];
+
+useSchemaOrg([
+    defineQuestion({
+      question: faqs[0].question,
+      answer: faqs[0].answer,
+    }),
+    defineQuestion({
+      question: faqs[1].question,
+      answer: faqs[1].answer,
+    }),
+    defineQuestion({
+      question: faqs[2].question,
+      answer: faqs[2].answer,
+    }),
+    defineQuestion({
+      question: faqs[3].question,
+      answer: faqs[3].answer,
+    }),
+    defineQuestion({
+      question: faqs[4].question,
+      answer: faqs[4].answer,
+    }),
+    defineQuestion({
+      question: faqs[5].question,
+      answer: faqs[5].answer,
+    }),
+  ]
+);
+
 
 
 </script>

@@ -17,7 +17,7 @@
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
-              <nuxt-link v-for="item in navigation" :key="item.name" :to="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</nuxt-link>
+              <nuxt-link v-for="item in navigation" :key="item.name" :to="item.href" :class="[item.href === route.path? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</nuxt-link>
             </div>
           </div>
         </div>
@@ -26,7 +26,7 @@
 
     <DisclosurePanel class="sm:hidden">
       <div class="space-y-1 px-2 pb-3 pt-2">
-        <nuxt-link v-for="item in navigation" :key="item.name" :to="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</nuxt-link>
+        <nuxt-link v-for="item in navigation" :key="item.name" :to="item.href" :class="[item.href === route.path ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']" :aria-current="item.current ? 'page' : undefined" >{{ item.name }}</nuxt-link>
       </div>
     </DisclosurePanel>
   </Disclosure>
@@ -38,9 +38,17 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'Products', href: '/products', current: false },
+  { name: 'ElvenSpark', href: '/product/elvenspark', current: false },
+  { name: 'Arasboost', href: '/product/arasboost', current: false },
+  { name: 'SylvanSurge', href: '/product/sylvansurge', current: false },
   { name: 'Blog', href: '/blogs', current: false },
   { name: 'About', href: '/about', current: false },
   { name: 'Contact', href: '/contact', current: false },
 ]
+
+const route = useRoute()
+
+
+
+
 </script>
