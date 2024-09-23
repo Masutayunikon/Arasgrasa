@@ -21,9 +21,9 @@
         <TabGroup as="div" class="flex flex-col-reverse">
           <!-- Image selector -->
 
-          <TabPanels class="aspect-h-1 aspect-w-1 w-full bg-slate-950 rounded-lg">
+          <TabPanels class="aspect-h-1 aspect-w-1 w-full rounded-lg" :class="product.colors[0].bgColor + ' ' + product.hueColor">
             <TabPanel v-for="image in product.images" :key="image.id">
-              <nuxt-img width="800" heigth="800" :src="image.src" :alt="image.alt" class="h-full w-full object-cover object-center sm:rounded-lg" :class="product.hueColor" />
+              <nuxt-img width="800" heigth="800" :src="image.src" :alt="image.alt" class="h-full w-full object-cover object-center sm:rounded-lg"/>
             </TabPanel>
           </TabPanels>
         </TabGroup>
@@ -759,6 +759,21 @@ useHead({
   ]
 })
 
+useSchemaOrg([
+    defineProduct({
+      name: product.value.meta.title,
+      image: product.value.images[0].src,
+      description: product.value.meta.description,
+      brand: 'Arasgrasa Tech'
+    }),
+    defineOffer({
+      price: product.value.price,
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: route.fullPath
+    })
+])
+
 watch(() => route.query.index, (value) => {
   index.value = value ? parseInt(value as string) : 0
 
@@ -770,6 +785,20 @@ watch(() => route.query.index, (value) => {
     ]
   })
 
+  useSchemaOrg([
+    defineProduct({
+      name: product.value.meta.title,
+      image: product.value.images[0].src,
+      description: product.value.meta.description,
+      brand: 'Arasgrasa Tech'
+    }),
+    defineOffer({
+      price: product.value.price,
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: route.fullPath
+    })
+  ])
 })
 
 </script>
