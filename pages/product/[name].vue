@@ -775,17 +775,21 @@ useSchemaOrg([
       ratingValue: product.value.rating.toString(),
       reviewCount: product.value.notes.length.toString(),
     },
-    review: product.value.notes.map((note) => defineReview({
-      reviewBody: note.commentary,
-      author: {
-        name: note.user,
-      },
-      reviewRating: {
-        bestRating: "5",
-        ratingValue: note.rating.toString(),
-        worstRating: "1"
+    review: product.value.notes.map((note) => {
+      return {
+        "@type": "Review",
+        "author": note.user,
+        "datePublished": note.date,
+        "reviewBody": note.commentary,
+        "name": note.user + ' review',
+        "reviewRating": {
+          "@type": "Rating",
+          "bestRating": "5",
+          "ratingValue": note.rating.toString(),
+          "worstRating": "1"
+        }
       }
-    }))
+    })
   }),
 ])
 
@@ -811,6 +815,25 @@ watch(() => route.query.index, (value) => {
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock',
         url: route.fullPath
+      }),
+      aggregateRating: {
+        ratingValue: product.value.rating.toString(),
+        reviewCount: product.value.notes.length.toString(),
+      },
+      review: product.value.notes.map((note) => {
+        return {
+          "@type": "Review",
+          "author": note.user,
+          "datePublished": note.date,
+          "reviewBody": note.commentary,
+          "name": note.user + ' review',
+          "reviewRating": {
+            "@type": "Rating",
+            "bestRating": "5",
+            "ratingValue": note.rating.toString(),
+            "worstRating": "1"
+          }
+        }
       })
     }),
   ])
