@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.3.0](https://github.com/Masutayunikon/Arasgrasa/compare/v1.2.0...v1.3.0) (2024-09-23)
+
+
+### Features
+
+* **about:** ✨ create about page ([f22bdb4](https://github.com/Masutayunikon/Arasgrasa/commit/f22bdb423eb7c435d31b5088c814b8a806c0684d))
+
+
+### Bug Fixes
+
+* **about:** 🐛 meta and alt ([80fbe71](https://github.com/Masutayunikon/Arasgrasa/commit/80fbe71643af19912d4adffd3e9c2a97f43b2a07))
+* **font:** 🐛 fix font for products, navbar, footer and contact page ([d2fe49c](https://github.com/Masutayunikon/Arasgrasa/commit/d2fe49cf3cbf08af7219f9433b57d812a4438372))
+
 ## [1.2.0](https://github.com/Masutayunikon/Arasgrasa/compare/v1.1.12...v1.2.0) (2024-09-23)
 
 
