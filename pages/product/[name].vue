@@ -760,18 +760,33 @@ useHead({
 })
 
 useSchemaOrg([
-    defineProduct({
-      name: product.value.meta.title,
-      image: product.value.images[0].src,
-      description: product.value.meta.description,
-      brand: 'Arasgrasa Tech'
-    }),
-    defineOffer({
+  defineProduct({
+    name: product.value.meta.title,
+    image: product.value.images[0].src,
+    description: product.value.meta.description,
+    brand: 'Arasgrasa Tech',
+    offers: defineOffer({
       price: product.value.price,
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
       url: route.fullPath
-    })
+    }),
+    aggregateRating: {
+      ratingValue: product.value.rating.toString(),
+      reviewCount: product.value.notes.length.toString(),
+    },
+    review: product.value.notes.map((note) => defineReview({
+      reviewBody: note.commentary,
+      author: {
+        name: note.user,
+      },
+      reviewRating: {
+        bestRating: "5",
+        ratingValue: note.rating.toString(),
+        worstRating: "1"
+      }
+    }))
+  }),
 ])
 
 watch(() => route.query.index, (value) => {
@@ -790,14 +805,14 @@ watch(() => route.query.index, (value) => {
       name: product.value.meta.title,
       image: product.value.images[0].src,
       description: product.value.meta.description,
-      brand: 'Arasgrasa Tech'
+      brand: 'Arasgrasa Tech',
+      offers: defineOffer({
+        price: product.value.price,
+        priceCurrency: 'USD',
+        availability: 'https://schema.org/InStock',
+        url: route.fullPath
+      })
     }),
-    defineOffer({
-      price: product.value.price,
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
-      url: route.fullPath
-    })
   ])
 })
 
