@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/Masutayunikon/Arasgrasa/compare/v1.3.1...v1.3.2) (2024-09-27)
+
+
+### Bug Fixes
+
+* **products:** 🐛 shema ([38b648c](https://github.com/Masutayunikon/Arasgrasa/commit/38b648cda91c2d03f649cf13d410f6d974fc0f1a))
+
 ## [1.3.1](https://github.com/Masutayunikon/Arasgrasa/compare/v1.3.0...v1.3.1) (2024-09-27)
 
 
